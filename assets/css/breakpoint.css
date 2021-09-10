@@ -1,5 +1,10 @@
 @media screen and (max-width: 800px) {
 
+    .container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
     /* Header */
 
     .landing-header {
