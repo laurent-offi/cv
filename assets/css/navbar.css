@@ -1,5 +1,5 @@
 .landing-header {
-    background-image: url("/assets/images/landing-header.jpg"), linear-gradient(#eb01a5, #d13531);
+    background-image: url("assets/images/landing-header.jpg"), linear-gradient(#eb01a5, #d13531);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
