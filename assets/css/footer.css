@@ -6,6 +6,7 @@ footer {
     padding-top: var(--padding);
     padding-bottom: var(--padding);
     flex-wrap: wrap;
+    list-style: none;
 }
 
 footer .footer-container {
@@ -36,20 +37,13 @@ footer .footer-container .about {
     
 }
 
-footer .footer-container .links {
-    display: flex;
-    justify-content: center;
-    width: 30%;
-    flex-direction: column;
-}
-
 footer .footer-container .social {
     display: flex;
     width: 30%;
     flex-direction: column;
 }
 
-footer .footer-container .links ul li {
+footer .footer-container ul li {
     list-style: none;
     transition: margin-left 0.5s ease;
     margin-bottom: 0.2rem;
@@ -57,21 +51,21 @@ footer .footer-container .links ul li {
 }
 
 
-footer .footer-container .links ul li a {
+footer .footer-container ul li a {
     text-decoration: none;
     transition: color 0.5s ease;
     font-weight: 550;
 }
 
-footer .footer-container .links ul li:hover {
+footer .footer-container ul li:hover {
     margin-left: 0.8rem;
 }
 
-footer .footer-container .links ul li a:hover {
+footer .footer-container ul li a:hover {
     color: var(--primary-color);
 }
 
-footer .footer-container .links ul li:before {
+footer .footer-container ul li:before {
     font-family: "Font Awesome 5 Duotone";
     content: "\10f35a";
     color: var(--secondary-color);
