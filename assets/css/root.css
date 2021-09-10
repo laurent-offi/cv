@@ -1,0 +1,64 @@
+:root {
+
+    --main-color: #182139;
+    --important-color: #272e48;
+    --general-color: #2d3554;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Uni Sans Heavy";
+    src: url("/assets/fonts/Uni Sans Heavy.otf");
+}
+
+@font-face {
+    font-family: "Uni Sans SemiBold";
+    src: url("/assets/fonts/UniSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Uni Sans Regular";
+    src: url("/assets/fonts/Uni Sans Regular.ttf");
+}
+
+h1 {
+    font-size: 30px;
+    font-family: "Uni Sans Heavy";
+    color: white;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: "Uni Sans SemiBold";
+    color: white;
+}
+
+p {
+    font-size: 15px;
+    font-family: "Uni Sans Regular";
+    color: white;
+}
+
+.container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}

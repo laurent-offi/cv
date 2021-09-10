@@ -1,0 +1,105 @@
+footer {
+    --padding: 2rem;
+
+    background-color: #11192F;
+    min-height: 30vh;
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    flex-wrap: wrap;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #D3D3D3;
+    list-style: none;
+}
+
+
+footer .footer-container h1 {
+    color: #C4C4C4;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+
+
+footer .footer-container p {
+    color: #D3D3D3;
+}
+
+
+footer .footer-container .about {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    
+}
+
+footer .footer-container .links {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    flex-direction: column;
+}
+
+footer .footer-container .social {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+footer .footer-container .links ul li {
+    list-style: none;
+    transition: margin-left 0.5s ease;
+    margin-bottom: 0.2rem;
+
+}
+
+
+footer .footer-container .links ul li a {
+    text-decoration: none;
+    transition: color 0.5s ease;
+    font-weight: 550;
+}
+
+footer .footer-container .links ul li:hover {
+    margin-left: 0.8rem;
+}
+
+footer .footer-container .links ul li a:hover {
+    color: var(--primary-color);
+}
+
+footer .footer-container .links ul li:before {
+    font-family: "Font Awesome 5 Duotone";
+    content: "\10f35a";
+    color: var(--secondary-color);
+    margin-right: 0.4rem;
+}
+
+footer .footer-container .social li a {
+    text-decoration: none;
+    color: #D3D3D3;
+    font-size: 2rem;
+    transition: transform 0.5s ease;
+}
+
+
+footer .footer-container .social li a:hover {
+    transform: scale(1.2);  
+}
+
+.copyright {
+    display: flex;
+    background-color: #1d1c1c;
+    color: var(--secondary-color);
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.copyright .mention {
+    display: flex;
+    justify-content: start;
+    font-weight: bold;
+}

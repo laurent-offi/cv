@@ -1,0 +1,92 @@
+@media screen and (max-width: 800px) {
+
+    /* Header */
+
+    .landing-header {
+        min-height: 35vh;
+    }
+
+    .responsive-nav {
+        display: none;
+    }
+
+    .responsive-menu {
+        display: flex;
+        font-size: 2rem;
+        color: white;
+        align-items: center;
+        cursor: pointer;
+        z-index: 40;
+    }
+
+    .responsive-menu:after {
+        font-family: "Font Awesome 5 Pro";
+        content: "\f0c9";
+    }
+
+
+    /* ====== */
+    
+        /* About */
+
+        .about-section {
+            flex-direction: column;
+        }
+
+        .about-section .card.about-infos {
+            margin-right: unset;
+            width: unset!important;
+            margin-bottom: 20px;
+        }
+
+        .about-section .card.about-bio {
+            width: unset!important;
+        }
+
+        /* ====== */
+
+        /* Skills */
+        
+        
+        .pr-charts .pr-chart-ctrl {
+            width: unset;
+        }
+        /* ====== */
+        
+        .card-about {
+            flex-direction: column;
+            
+        }
+        
+        .card-about .formation-block {
+            width: 100%;
+        }
+
+        /* Skills */
+        
+        .portfolio-images img {
+            width: 100%;
+            margin: unset;
+            margin-bottom: 1rem;
+        }
+        
+        .bg-bubbles {
+            width: 60%;
+            box-sizing: border-box;
+        }
+        
+        /* ====== */
+
+
+        footer .footer-container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    
+        footer .footer-container .about, .links, .social {
+            width: 100%!important;
+            margin-bottom: 1rem;
+        }
+}

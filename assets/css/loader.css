@@ -1,0 +1,65 @@
+body#preloader {
+    overflow: hidden;
+}
+
+#preloader {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:#1d1824;
+    background-image: linear-gradient(80deg, #1d1824 0%, #4f42c2 100%);    
+    z-index: 99999;
+    transition: all 0.4s ease;
+}
+  
+  .loader {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.4s;
+  }
+  
+  .loader .loader_text {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #b9b6b8;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .loader .loader_bar  {
+    position: relative;
+    width: 500px;
+    height: 12px;
+    background: #EDEEF7;
+    border-radius: 50px;
+  }
+  
+  .loader .loader_bar:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0075F6;
+    border-radius: 50px;
+    animation: fill 0.3s ease;
+  }
+  
+    .logo-animation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-animation img {
+        width: 15rem;
+        animation: pulse;
+        animation-duration: 2s;
+    }
+
+  @keyframes fill {
+    0% { width: 0% }
+    100% { width: 100% }
+  }

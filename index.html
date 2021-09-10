@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV en ligne</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" href="assets/css/hobbies.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="assets/css/background.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/stars.css">
+    <link rel="stylesheet" href="assets/css/tooltip.css">
+    <link rel="stylesheet" href="assets/css/breakpoint.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+
+    <div id="preloader">
+        <div class="loader">
+
+            <div class="logo-animation"><img class="animate__animated animate__infinite"
+                    src="/assets/images/planet.svg"></div>
+
+            <p class="loader_text" id="loader_text">Chargement en cours : <b><span class="loader_text_unit"
+                        data-count="100">0</span><span>%</span></b></p>
+        </div>
+    </div>
+
+
+
+    <div class="landing-header">
+        <div class="top-section">
+            <nav class="nav-responsive nav-container">
+
+                <div class="logo-brand"><img src="/assets/images/logo.png" alt="Logo"></div>
+
+                <div class="responsive-menu" onclick="openNav()"></div>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <a onclick="closeNav()" href="#about">A propos </a>
+                    <a onclick="closeNav()" href="#skills">Compétences</a>
+                    <a onclick="closeNav()" href="#portfolio">Portfolio</a>
+                    <a onclick="closeNav()" href="#designs">Conceptions</a>
+                    <a onclick="closeNav()" href="#formations">Formations</a>
+                    <a onclick="closeNav()" href="#hobbies">Hobbies</a>
+                </div>
+
+                <div class="responsive-nav">
+
+                    <ul>
+
+                        <li><a href="#about">A propos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#designs">Conceptions</a></li>
+                        <li><a href="#formations">Formations</a></li>
+                        <li><a href="#hobbies">Hobbies</a></li>
+
+                    </ul>
+
+
+
+                </div>
+
+        </div>
+
+        <div class="space stars3"></div>
+
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 200" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(24, 33, 57, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(24, 33, 57, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                d="M0,0L48,0C96,0,192,0,288,13.3C384,27,480,53,576,60C672,67,768,53,864,40C960,27,1056,13,1152,26.7C1248,40,1344,80,1440,83.3C1536,87,1632,53,1728,60C1824,67,1920,113,2016,123.3C2112,133,2208,107,2304,96.7C2400,87,2496,93,2592,90C2688,87,2784,73,2880,63.3C2976,53,3072,47,3168,43.3C3264,40,3360,40,3456,40C3552,40,3648,40,3744,33.3C3840,27,3936,13,4032,20C4128,27,4224,53,4320,66.7C4416,80,4512,80,4608,76.7C4704,73,4800,67,4896,73.3C4992,80,5088,100,5184,120C5280,140,5376,160,5472,166.7C5568,173,5664,167,5760,136.7C5856,107,5952,53,6048,33.3C6144,13,6240,27,6336,56.7C6432,87,6528,133,6624,153.3C6720,173,6816,167,6864,163.3L6912,160L6912,200L6864,200C6816,200,6720,200,6624,200C6528,200,6432,200,6336,200C6240,200,6144,200,6048,200C5952,200,5856,200,5760,200C5664,200,5568,200,5472,200C5376,200,5280,200,5184,200C5088,200,4992,200,4896,200C4800,200,4704,200,4608,200C4512,200,4416,200,4320,200C4224,200,4128,200,4032,200C3936,200,3840,200,3744,200C3648,200,3552,200,3456,200C3360,200,3264,200,3168,200C3072,200,2976,200,2880,200C2784,200,2688,200,2592,200C2496,200,2400,200,2304,200C2208,200,2112,200,2016,200C1920,200,1824,200,1728,200C1632,200,1536,200,1440,200C1344,200,1248,200,1152,200C1056,200,960,200,864,200C768,200,672,200,576,200C480,200,384,200,288,200C192,200,96,200,48,200L0,200Z">
+            </path>
+        </svg>
+    </div>
+
+    </nav>
+
+
+    <div class="container">
+
+        <section id="about" data-aos="fade-up">
+
+
+
+            <h1>A propos de moi</h1>
+
+
+            <div class="about-section">
+
+                <div class="card important about-infos">
+
+
+                    <div class="profile-img hover"><img src="/assets/images/logo.png" alt="Logo"></div>
+
+
+                    <h2>Laurent COURCELLE </h2>
+
+                    <div class="specificity">
+                        <i class="fas fa-magic"></i> WebDesigner
+                    </div>
+                    <div class="specificity">
+                        <i class="fas fa-code"></i> Développeur
+                    </div>
+
+
+
+                </div>
+                <div class="card about-bio">
+
+                    <p>Un jeune développeur web motivé et dévoué à la conception, le design, la créations de site
+                        diverses à la main, l’exploitatation de systèmes diverses, habitué des CMS, scripts, et autre.
+                    </p>
+                    <p>Passionné d’informatique depuis que je suis tout jeune, je m’aventure dans cette univers à la
+                        recherche de toujours plus de connaissances dans le software et le hardware...</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <section id="skills" data-aos="fade-up">
+
+            <h1>Compétences</h1>
+
+            <ul class="pr-charts">
+                <li class="pr-chart-ctrl" data-animate="false">
+                    <div class="pr-chart" data-percent="75"><i></i></div>
+                    <p>PHP</p>
+                </li>
+                <li class="pr-chart-ctrl" data-animate="false">
+                    <div class="pr-chart" data-percent="95"><i></i></div>
+                    <p>HTML/CSS</p>
+                </li>
+                <li class="pr-chart-ctrl" data-animate="false">
+                    <div class="pr-chart" data-percent="52"><i></i></div>
+                    <p>Javascript</p>
+                </li>
+                <li class="pr-chart-ctrl" data-animate="false">
+                    <div class="pr-chart" data-percent="70"><i></i></div>
+                    <p>MySQL</p>
+                </li>
+                <li class="pr-chart-ctrl" data-animate="false">
+                    <div class="pr-chart" data-percent="80"><i></i></div>
+                    <p>Ui/UIX</p>
+                </li>
+            </ul>
+
+
+        </section>
+
+        <section id="portfolio" data-aos="fade-up">
+
+            <h1>Portfolio</h1>
+
+            <div class="portfolio-images">
+
+                <div id="meetheart" class="modal">
+
+                    <div class="modal-title">
+                        meetheart
+
+                        <i id="close-modal" class="far fa-times-circle" title="Fermer la fenêtre"></i>
+                    </div>
+
+                    <div class="modal-container">
+
+                        MeetHeart est un projet de formation lié à la conception d'un site de rencontre en PHP.
+                        <br>
+                        Le cahier des charges indiquait clairement d'utiliser les cookies pour l'enregistrement des
+                        données et d'utiliser un tableau à deux dimensions pour les utilisateurs.
+                        <br>
+                        Le but du projet était de s'habituer à suivre un cahier des charges à la lettre.
+                    </div>
+
+                    <a class="modal-link" href="#">Accéder au site</a>
+
+                </div>
+
+
+                <span data-tooltip="Cliquez pour avoir plus d'informations" data-flow="top">
+                    <img id="open-meetheart" src="assets/images/portfolio/meetheart.PNG" alt="Image du porfolio">
+                </span>
+
+
+
+
+
+        </section>
+
+        <section id="designs" data-aos="fade-up">
+
+            <h1>Conceptions</h1>
+
+            <div class="designs-images">
+
+
+                <span data-tooltip="Logo personnel du site" data-flow="top">
+                    <img src="assets/images/designs/logo.svg" alt="Logo perso">
+                </span>
+
+                <span data-tooltip="Concept de logo de la nasa" data-flow="top">
+                    <img src="assets/images/designs/nasa.svg" alt="Logo nasa">
+                </span>
+
+                <span data-tooltip="Concept de couronne" data-flow="top">
+                    <img src="assets/images/designs/crown.svg" alt="Couronne">
+                </span>
+
+                <span data-tooltip="Concept de crystal" data-flow="top">
+                    <img src="assets/images/designs/crystal.svg" alt="Crystal">
+                </span>
+
+                <span data-tooltip="Planète" data-flow="top">
+                    <img src="assets/images/designs/planet.svg" alt="Planète">
+                </span>
+
+                <span data-tooltip="Fusée" data-flow="top">
+                    <img src="assets/images/designs/rocket.svg" alt="Fusée">
+                </span>
+
+                <span data-tooltip="Concept de miroir liquide" data-flow="top">
+                    <img src="assets/images/designs/liquid_miror.svg" alt="Miroir">
+                </span>
+
+                <span data-tooltip="Concept de comète" data-flow="top">
+                    <img src="assets/images/designs/comet.svg" alt="Comète">
+                </span>
+
+                <span data-tooltip="Verre" data-flow="top">
+                    <img src="assets/images/designs/glass.svg" alt="Comète">
+                </span>
+
+            </div>
+
+
+
+        </section>
+
+        <section id="formations" data-aos="fade-up">
+
+            <h1>Formations</h1>
+
+
+            <div class="card-about">
+
+
+                <div class="formation-block" id="afpa-description">
+
+
+                    <img src="https://www.afpa.fr/documents/21653/0/Logo+Afpa/3032a051-29dd-49b8-a184-b63dec424973?version=1.0&t=1605534125058"
+                        alt="Logo Afpa">
+                    <p><b>Afpa [WebDesign] - 9 mois</b></p>
+
+                    <div class="formation-description-view">
+                        <p>Déroulez la description de la formation</p>
+                    </div>
+
+                    <div id="afp" class="formation-description">
+                        <p>Le Web designer participe aux étapes de production d'éléments multimédia, publiés en réseau
+                            ou édités sur un support numérique, pour créer des outils de communication sur écran...</p>
+                    </div>
+
+                </div>
+
+                <div class="formation-block" id="manu-description">
+
+
+                    <img src="https://image-parcours.copainsdavant.com/image/750/1706092328/4271463.png"
+                        alt="Logo La manu">
+                    <p><b>La Manu [PHP] - 3 mois
+                            <br>(17/12/2020 - 16/03/2021)</b></p>
+
+                    <div class="formation-description-view">
+                        <p>Déroulez la description de la formation</p>
+                    </div>
+
+                    <div id="mn" class="formation-description">
+                        <p>La formation Développeur PHP doit permettre aux stagiaires d’acquérir les compétences
+                            nécessaires pour développer des applications web en intégrant les recommandations de
+                            sécurité, dans le respect des normes, standards et des bonnes pratiques reconnus par la
+                            profession...</p>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </section>
+
+
+        <section id="hobbies" data-aos="fade-up">
+
+
+            <h1>Hobbies</h1>
+
+            <div class="hobbies-container">
+
+
+                <span data-tooltip="Musculation - Vélo - footing" data-flow="top">
+                    <div class="hobbie-card">
+
+                        <div class="hobbie">
+
+                            <i class="fas fa-bowling-ball"></i>
+
+                        </div>
+                        <p>Sport</p>
+                    </div>
+                </span>
+
+                <div class="hobbie-card">
+
+                    <div class="hobbie">
+
+                        <i class="fas fa-robot"></i>
+
+                    </div>
+                    <p>Informatique</p>
+                </div>
+
+
+                <div class="hobbie-card">
+
+                    <div class="hobbie">
+
+                        <i class="fad fa-film-alt"></i>
+
+                    </div>
+                    <p>Cinéma</p>
+                </div>
+
+                <span data-tooltip="RTS - Aventure - Actio - Etc.." data-flow="top">
+                    <div class="hobbie-card">
+
+                        <div class="hobbie">
+
+                            <i class="fas fa-gamepad"></i>
+
+                        </div>
+                        <p>Jeux vidéos</p>
+                    </div>
+                </span>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-container">
+
+
+                <div class="about">
+
+                    <h1>Informations de contact</h1>
+
+                    <p>
+                        <li><i class="fas fa-envelope-square"></i> laurent.courcelle.lh@gmail.com</li>
+                        <li><i class="fas fa-phone-square-alt"></i> 06.46.34.02.79</li>
+                    </p>
+                </div>
+
+                <div class="social">
+
+                    <h1>Réseaux sociaux</h1>
+
+                    <li><a href="https://www.linkedin.com/in/courcelle-laurent-901200218/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a></li>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.easypiechart.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script src="/assets/js/loader.js"></script>
+<script src="/assets/js/aos.js"></script>
+<script src="/assets/js/scroll.js"></script>
+<script src="/assets/js/sidebar.js"></script>
+<script src="/assets/js/background.js"></script>
+<script src="/assets/js/show.js"></script>
+<script src="/assets/js/parallaxhover.js"></script>
+<script src="/assets/js/modal.js"></script>
+
+
+
+</html>

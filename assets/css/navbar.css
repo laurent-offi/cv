@@ -1,0 +1,97 @@
+.landing-header {
+    background-image: url("/assets/images/landing-header.jpg"), linear-gradient(#eb01a5, #d13531);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 70vh;
+    position: relative;
+}
+
+.responsive-nav {
+    display: flex;
+    align-items: center;
+}
+
+.responsive-menu {
+    display: none;
+}
+
+.nav-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+nav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    user-select: none;
+    z-index: 5000;
+}
+
+nav.nav-responsive {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 5rem;
+    pointer-events: none;
+    z-index: 2000;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li a {
+    position: relative;
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #D3D3D3;
+    font-weight: bold;
+    transition: color 0.5s ease;
+    text-decoration: none;
+    z-index: 6;
+}
+
+nav ul li a:hover {
+    color: #FFDC53;
+}
+
+nav ul li a.active {
+    color: #FFDC53;
+}
+
+#wave {
+    position: absolute;
+    bottom: -0.2rem;
+    left: 0;
+    
+}
+
+.top-section {
+    z-index: 10;
+}
+
+.sticky {
+    align-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: #11192f;
+    z-index: 50001;
+    animation: scrollecffet 0.2s ease;
+
+}
+
+.sticky .nav-responsive {
+    justify-content: space-between;
+}

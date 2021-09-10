@@ -1,0 +1,166 @@
+section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    z-index: 5;
+}
+
+section h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #D4D4D4;
+    margin-bottom: 80px;
+  }
+  
+  section h1::before,
+  section h1::after {
+    content: '';
+    flex: 1;
+    border-bottom: 0.8px solid #E8E8E8;
+  }
+  
+  section h1:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  section h1:not(:empty)::after {
+    margin-left: .25em;
+  }
+
+
+  svg.planet {
+    width: 12rem;
+    display: flex;
+
+}
+
+/* ============================== */
+
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.card.about-infos .specificity {
+    width: 100%!important;
+}
+
+.card.about-bio p {
+    margin-bottom: 1rem!important;
+}
+
+.portfolio-images {
+    display: flex;
+    user-select: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-images img {
+    width: 25rem;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: transform 0.8s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+    z-index: 2;
+}
+
+.portfolio-images img:hover {
+    transform: scale(1.1);   
+
+}
+
+.designs-images {
+    display: flex;
+    user-select: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.designs-images img {
+    width: 18rem;
+    height: 18rem;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: transform 0.8s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+    z-index: 2;
+}
+
+.designs-images img:hover {
+    transform: scale(1.1);   
+
+}
+
+.formation-description {
+    background-color: #101422;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.formation-description p {
+    line-height: 1.5rem;
+}
+
+.formation-block {
+    background-color: #272E48;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.formation-block img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    user-select: none;
+    pointer-events: none;
+    border: 0.8rem solid #1f2439;
+    margin: auto;
+}
+
+.formation-block:hover {
+    background-color: #1f253b;
+}
+
+.card-about, .formation-block {
+    display: flex;
+
+}
+
+.formation-description-view {
+    margin-top: 0.5rem;
+}
+
+.formation-description-view::after {
+    color: white;
+    font-family: "Font Awesome 5 Pro";
+    content: "\f107";
+}
+
+.formation-description {
+    display: none;
+}

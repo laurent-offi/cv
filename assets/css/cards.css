@@ -1,0 +1,71 @@
+.card {
+    background-color: #2D3554;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.card-about {
+    background-color: #2D3554;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.card.important {
+    background-color: #272E48;
+}
+
+.card.about-infos {
+    width: 30%;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card.about-infos .profile-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15%;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.card.about-infos .profile-img img {
+    transition: transform 0.8s ease;
+
+}
+
+.card.about-infos .profile-img img:hover {
+    transform: scale(1.5); 
+}
+
+.card.about-infos img {
+    width: 10rem;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+.card.about-infos h2 {
+
+    font-weight: 700;
+}
+
+.card.about-infos .specificity {
+    background-color: #2D3554;
+    color: #DBA34F;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 800;
+}
+
+.card.about-bio {
+    width: 70%;
+    color: #EEEEEE;
+}
