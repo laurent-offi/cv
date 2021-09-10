@@ -32,12 +32,12 @@
     z-index: 4;
 }
 
-.card.about-infos .profile-img img {
+.card.about-infos .profile-img svg {
     transition: transform 0.8s ease;
 
 }
 
-.card.about-infos .profile-img img:hover {
+.card.about-infos .profile-img svg:hover {
     transform: scale(1.5); 
 }
 
