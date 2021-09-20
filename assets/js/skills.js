@@ -8,9 +8,21 @@ let options = {
   function(event, progress, stepValue){
     $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
   });
+  $(".html .bar").circleProgress({
+    value: 0.95
+  });
   $(".js .bar").circleProgress({
+    value: 0.60
+  });
+  $(".php .bar").circleProgress({
+    value: 0.60
+  });
+  $(".php .bar").circleProgress({
     value: 0.70
   });
-  $(".react .bar").circleProgress({
-    value: 0.60
+  $(".mysql .bar").circleProgress({
+    value: 0.70
+  });
+  $(".react .ui").circleProgress({
+    value: 1
   });
