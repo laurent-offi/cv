@@ -75,7 +75,7 @@ footer .footer-container ul li:before {
 footer .footer-container .social li a {
     text-decoration: none;
     color: #D3D3D3;
-    font-size: 2rem;
+    font-size: 1.2rem;
     transition: transform 0.5s ease;
 }
 

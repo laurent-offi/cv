@@ -9,7 +9,7 @@
         content="Découvrez mon CV version site web et apprenez-en un peu plus sur moi, mes qualités, mon travail, etc...">
     <title>Mon CV en ligne</title>
 
-    <link rel="noreferrer" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/root.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/sections.css">
@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/animations.css">
 
-    <link rel="noreferrer" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="noreferrer" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 
 
@@ -142,8 +142,13 @@
                         diverses à la main, l’exploitatation de systèmes diverses, habitué des CMS, scripts, et autre.
                     </p>
                     <p>Passionné d’informatique depuis que je suis tout jeune, je m’aventure dans cette univers à la
-                        recherche de toujours plus de connaissances dans le software et le hardware...</p>
+                        recherche de toujours plus de connaissances dans le software et le hardware...
+                    </p>
 
+
+                    <span data-tooltip="Le lien s'ouvrira dans un nouvel onglet" data-flow="top">
+                        <a href="assets/download/cv.pdf" target="_blank"><i class="fas fa-link"></i> Accéder à mon CV papier</a>
+                    </span>
                 </div>
 
             </div>
@@ -170,28 +175,52 @@
 
             <h1>Compétences</h1>
 
-            <ul class="pr-charts">
-                <li class="pr-chart-ctrl" data-animate="false">
-                    <div class="pr-chart" data-percent="75"><i></i></div>
-                    <p>PHP</p>
-                </li>
-                <li class="pr-chart-ctrl" data-animate="false">
-                    <div class="pr-chart" data-percent="95"><i></i></div>
-                    <p>HTML/CSS</p>
-                </li>
-                <li class="pr-chart-ctrl" data-animate="false">
-                    <div class="pr-chart" data-percent="52"><i></i></div>
-                    <p>Javascript</p>
-                </li>
-                <li class="pr-chart-ctrl" data-animate="false">
-                    <div class="pr-chart" data-percent="70"><i></i></div>
-                    <p>MySQL</p>
-                </li>
-                <li class="pr-chart-ctrl" data-animate="false">
-                    <div class="pr-chart" data-percent="80"><i></i></div>
-                    <p>Ui/UIX</p>
-                </li>
-            </ul>
+
+            <div class="wrapper">
+
+                <div class="card html/css">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">HTML & CSS</div>
+                </div>
+
+                <div class="card js">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">JavaScript</div>
+                </div>
+
+                <div class="card php">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">PHP</div>
+                </div>
+
+                <div class="card mysql">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">MySQL</div>
+                </div>
+
+                <div class="card mysql">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div class="text">UI & UIX</div>
+                </div>
+
+
+
+            </div>
 
 
         </section>
@@ -226,7 +255,7 @@
 
 
                 <span data-tooltip="Cliquez pour avoir plus d'informations" data-flow="top">
-                    <img id="open-meetheart" src="" alt="Projet MeetHeart">
+                    <img id="open-meetheart" src="assets/images/no-image.svg" alt="Projet MeetHeart">
                 </span>
 
 
@@ -294,9 +323,8 @@
 
                 <div class="formation-block" id="afpa-description">
 
-
-                    <img src="" alt="Logo Afpa">
-                    <p><b>Afpa [WebDesign] - 9 mois</b></p>
+                    <p><b>Afpa [WebDesign] - 9 mois
+                            <br>(21/06/2021 - 25/03/2022)</b></p>
 
                     <div class="formation-description-view">
                         <p>Déroulez la description de la formation</p>
@@ -311,8 +339,6 @@
 
                 <div class="formation-block" id="manu-description">
 
-
-                    <img src="" alt="Logo La manu">
                     <p><b>La Manu [PHP] - 3 mois
                             <br>(17/12/2020 - 16/03/2021)</b></p>
 
@@ -425,8 +451,8 @@
 
                     <ul>
 
-                        <li><a rel="noopener" href="https://www.linkedin.com/in/courcelle-laurent-901200218/" target="_blank"><i
-                                    class="fab fa-linkedin"></i> Linkedin</a></li>
+                        <li><a rel="noopener" href="https://www.linkedin.com/in/courcelle-laurent-901200218/"
+                                target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
                     </ul>
 
                 </div>
@@ -446,9 +472,12 @@
 <script src="assets/js/jquery.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 <script src="assets/js/loader.js"></script>
 <script src="assets/js/aos.js"></script>
 <script src="assets/js/scroll.js"></script>
+<script src="assets/js/skills.js"></script>
 <script src="assets/js/sidebar.js"></script>
 <script src="assets/js/background.js"></script>
 <script src="assets/js/show.js"></script>
